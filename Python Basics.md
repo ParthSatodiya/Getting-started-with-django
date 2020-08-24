@@ -22,7 +22,18 @@ Below provided some links to the official [Python tutorial](https://docs.python.
 * [Number, string and list using Python interactive shell mode](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
 * [Control flow tools](https://docs.python.org/3/tutorial/controlflow.html)
 * Data structures
+    * [List comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
     * [Tuples and Sequences](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
     * [Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
     * [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
     * [Looping](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
+* [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
+* Classes
+    * [A First Look at Classes](https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes)
+    * [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+* Standard Libraries
+    * Dates and Times
+        * [timedelta Objects](https://docs.python.org/3/library/datetime.html#timedelta-objects)
+        * [date Objects](https://docs.python.org/3/library/datetime.html#date-objects)
+        * [datetime Objects](https://docs.python.org/3/library/datetime.html#datetime-objects)
+        * [timezone Objects](https://docs.python.org/3/library/datetime.html#timezone-objects)
