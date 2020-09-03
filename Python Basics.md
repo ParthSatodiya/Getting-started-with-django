@@ -37,3 +37,29 @@ Below provided some links to the official [Python tutorial](https://docs.python.
         * [date Objects](https://docs.python.org/3/library/datetime.html#date-objects)
         * [datetime Objects](https://docs.python.org/3/library/datetime.html#datetime-objects)
         * [timezone Objects](https://docs.python.org/3/library/datetime.html#timezone-objects)
+
+
+### :point_right: CMD Exercise (Simple TODO list)
+Build an TODO command line app which will keep track of the new TODO list, mark any finished tasks or update the tasks.
+Keep track of the date_updated, date_created and date_finished for every tasks. At the end, we will be able to see tasks list with all the related dates and also the time taken to complete a particular task. All the date-time related calculation should be used along with timezone. So datetime Python library will be used here.
+
+Initially after running the Python program, we will ask basic user information like *username* *timezone of the user*.
+
+Then we can show an empty list of tasks and show a list of actions that user can perform.
+List format:    Sr no.  |   Task name   |   Date created     |   Time taken  |
+
+Actions to show: 
+1. Add
+2. Update
+3. complete
+4. Change timezone
+5. Completed tasks
+
+After every action completed, we will show all pending tasks with the above list format.
+
+1. Add -> Ask for the task name.
+2. Update -> Ask sr no. and ask updated task name.
+3. Completed -> Ask sr no.
+4. Change timezone -> Ask for the timezone shorthand.
+5. Completed tasks -> This will show completed tasks in the below format.
+Completed tasks format:     Sr no.  |   Task name   |   Date created    |   Finished at     |   Time taken  |
