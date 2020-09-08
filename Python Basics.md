@@ -45,8 +45,7 @@ Keep track of the date_updated, date_created and date_finished for every tasks. 
 
 Initially after running the Python program, we will ask basic user information like *username* *timezone of the user*.
 
-Then we can show an empty list of tasks and show a list of actions that user can perform.
-List format:    Sr no.  |   Task name   |   Date created     |   Time taken  |
+Then we can show an empty list of tasks with (Sr no., Task name, Date created) fields and show a list of actions that user can perform.
 
 Actions to show: 
 1. Add
@@ -62,4 +61,7 @@ After every action completed, we will show all pending tasks with the above list
 3. Completed -> Ask sr no.
 4. Change timezone -> Ask for the timezone shorthand.
 5. Completed tasks -> This will show completed tasks in the below format.
-Completed tasks format:     Sr no.  |   Task name   |   Date created    |   Finished at     |   Time taken  |
+
+Sr no. | Task name | Date created | Finished at | Time taken
+-------|-----------|--------------|-------------|------------|
+1 | Glossary | 08/09/2020 11:30 | 08/09/2020 12:45 | 1 h 15 min 
