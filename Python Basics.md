@@ -38,6 +38,16 @@ Below provided some links to the official [Python tutorial](https://docs.python.
         * [datetime Objects](https://docs.python.org/3/library/datetime.html#datetime-objects)
         * [timezone Objects](https://docs.python.org/3/library/datetime.html#timezone-objects)
 
+:point_right: Koans
+
+Koans are puzzles or exercises that are a way to reinforce your learnings of a programming language’s constructs.
+The above links to the official docs are best learnt interactively using [koans](https://github.com/gregmalcolm/python_koans).
+These are koans in the form of a failing tests that needs fixing as you go. So steps to follow are:
+* Follow along with test cases.
+* Read through the python official docs regarding the concept being introduced by test.
+* Try it out in the python3 REPL.
+* Do the necessary edits in test focusing on making concept focused test pass.
+* Read more about how python official docs describes it.
 
 ### :point_right: CMD Exercise (Simple TODO list)
 Build an TODO command line app which will keep track of the new TODO list, mark any finished tasks or update the tasks.
