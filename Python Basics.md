@@ -49,7 +49,27 @@ These are koans in the form of a failing tests that needs fixing as you go. So s
 * Do the necessary edits in test focusing on making concept focused test pass.
 * Read more about how python official docs describes it.
 
-### :point_right: CMD Exercise (Simple TODO list)
+### :point_right: Exercise 1
+
+Given the cow milkings array and the collection array, find out how many milkings happened for each collection.
+Both arrays are sorted based on the date and time. Use Python datetime library if required.
+
+- Sample input:
+```
+Milkings = ["12/03/2020 3:00", "12/03/2020 15:00", "13/03/2020 15:00", "14/03/2020 6:00", "15/03/2020 12:00", "16/03/2020 3:30"]
+Collections = ["12/03/2020 16:00", "14/03/2020 16:30", "16/03/2020 5:00"]
+```
+
+- Sample output:
+```
+Result = {
+    "12/03/2020 16:00": 2,
+    "14/03/2020 16:30": 2,
+    "16/03/2020 05:00" : 2
+}
+```
+
+### :point_right: Exercise 2 (Simple TODO list)
 Build an TODO command line app which will keep track of the new TODO list, mark any finished tasks or update the tasks.
 Keep track of the date_updated, date_created and date_finished for every tasks. At the end, we will be able to see tasks list with all the related dates and also the time taken to complete a particular task. All the date-time related calculation should be used along with timezone. So datetime Python library will be used here.
 
