@@ -104,3 +104,63 @@ After every action completed, we will show all pending tasks with the above list
 Sr no. | Task name | Date created | Finished at | Time taken
 -------|-----------|--------------|-------------|------------|
 1 | Glossary | 08/09/2020 11:30 | 08/09/2020 12:45 | 1 h 15 min 
+
+### :point_right: Exercise 3 (OOP using Chess movement simulator)
+
+You are required to create a program, which simulates a chessboard and the
+movements of various types of pieces on the chessboard.
+
+Chessboard:
+
+The chessboard is an 8 x 8 grid with 64 cells in it.
+With 8 rows (A, B, C.... H) and 8 columns (1, 2, 3.... 8), each cell can be uniquely
+identified with its cell number. This can be seen illustrated below.
+A1 A2 A3 A4 A5 A6 A7 A8  
+B1 B2 B3 B4 B5 B6 B7 B8  
+C1 C2 C3 C4 C5 C6 C7 C8  
+D1 D2 D3 D4 D5 D6 D7 D8  
+E1 E2 E3 E4 E5 E6 E7 E8  
+F1 F2 F3 F4 F5 F6 F7 F8  
+G1 G2 G3 G4 G5 G6 G7 G8  
+H1 H2 H3 H4 H5 H6 H7 H8
+
+Chess pieces and their movements:
+The game of chess has 6 unique types of pieces, with their own unique types
+of movements. These are:
+1.) King – Can move only 1 step at a time in all 8 directions (horizontal, vertical
+and diagonal)
+2.) Queen – Can move across the board in all 8 directions
+3.) Bishop – Can move across the board only diagonally
+4.) Horse – Can move across the board only in 2.5 steps (2 vertical steps and 1
+horizontal step)
+5.) Rook – Can move across the board only vertically and horizontally
+6.) Pawn – Can move only 1 step at a time, in the forward direction, vertically.
+Can also move 1 step forward diagonally, in order to eliminate an opposing
+piece.
+Assumption:
+Assume that the board is empty. This means that the pawn cannot move
+diagonally and no considerations are needed for another piece already occupying next cell.
+
+Sample run:
+
+```
+./chess.py King E3
+E2, E4, D3, F3, D2, F2, D4, F4
+./chess.py Queen E3
+E2, E1, E4, E5, E6, E7, E8, D3, C3, B3, A3, F3, G3, H3, D2, C1, F2, G1, D4, C5, B6, A7, F4, G5, H6
+./chess.py Bishop E3
+D2, C1, F2, G1, D4, C5, B6, A7, F4, G5, H6
+./chess.py Rook E3
+E2, E1, E4, E5, E6, E7, E8, D3, C3, B3, A3, F3, G3, H3
+./chess.py Pawn E3
+D3, F3
+./chess.py Horse E3
+D1, F1, D5, F5, C2, C4, G2, G4
+```
+
+Suggested roadmap:
+1. Design piece which can move horizontally on any grid (8 X 8, 2 X 3) limited by its allowed steps.
+2. Design piece which can move vertically on any grid limited by its allowed steps.
+3. Design piece which can move diagonally on any grid limited by its allowed steps.
+4. Design special piece having multiple movements in different directions.
+5. Mix pieces that can move in multiple direction to form one of the above.
