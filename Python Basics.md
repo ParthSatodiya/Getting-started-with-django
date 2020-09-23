@@ -110,7 +110,7 @@ Sr no. | Task name | Date created | Finished at | Time taken
 You are required to create a program, which simulates a chessboard and the
 movements of various types of pieces on the chessboard.
 
-Chessboard:
+*Chessboard*:
 
 The chessboard is an 8 x 8 grid with 64 cells in it.
 With 8 rows (A, B, C.... H) and 8 columns (1, 2, 3.... 8), each cell can be uniquely
@@ -128,23 +128,23 @@ H1 H2 H3 H4 H5 H6 H7 H8
 ```
 
 Chess pieces and their movements:
-The game of chess has 6 unique types of pieces, with their own unique types
-of movements. These are:
-1.) King – Can move only 1 step at a time in all 8 directions (horizontal, vertical
+The game of chess has 6 unique types of pieces, with their own unique types of movements. These are:
+* King – Can move only 1 step at a time in all 8 directions (horizontal, vertical
 and diagonal)
-2.) Queen – Can move across the board in all 8 directions
-3.) Bishop – Can move across the board only diagonally
-4.) Horse – Can move across the board only in 2.5 steps (2 vertical steps and 1
+* Queen – Can move across the board in all 8 directions
+* Bishop – Can move across the board only diagonally
+* Horse – Can move across the board only in 2.5 steps (2 vertical steps and 1
 horizontal step)
-5.) Rook – Can move across the board only vertically and horizontally
-6.) Pawn – Can move only 1 step at a time, in the forward direction, vertically.
+* Rook – Can move across the board only vertically and horizontally
+* Pawn – Can move only 1 step at a time, in the forward direction, vertically.
 Can also move 1 step forward diagonally, in order to eliminate an opposing
 piece.
-Assumption:
+
+*Assumption*:
 Assume that the board is empty. This means that the pawn cannot move
 diagonally and no considerations are needed for another piece already occupying next cell.
 
-Sample run:
+*Sample run*:
 
 ```
 ./chess.py King E3
@@ -161,7 +161,7 @@ D3, F3
 D1, F1, D5, F5, C2, C4, G2, G4
 ```
 
-Suggested roadmap:
+*Suggested roadmap*:
 1. Design piece which can move horizontally on any grid (8 X 8, 2 X 3) limited by its allowed steps.
 2. Design piece which can move vertically on any grid limited by its allowed steps.
 3. Design piece which can move diagonally on any grid limited by its allowed steps.
