@@ -6,6 +6,7 @@ This will give you path to learn Django Framework for web development and Django
     * Follow the tutorial and implement the blog app
 
 ### :point_right: Django rest framework
+* [Understanding Rest apis](https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/)(1 days)
 * [Overview](https://www.django-rest-framework.org/tutorial/quickstart/)(0.5 days)
 * [Tutorial](https://www.django-rest-framework.org/tutorial/1-serialization/)(2.5 days)
     * Refer all 1-6
