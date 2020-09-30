@@ -1,8 +1,8 @@
 This will give you path to learn Django Framework for web development and Django Rest Framework package for building rest apis.
 
 ### :point_right: Django
-* [Introduction](https://www.edureka.co/blog/django-tutorial/#webapp) *(2 days)*
-* [Tutorial](https://realpython.com/get-started-with-django-1/#showcase-your-projects) *(2 days)*
+* [Introduction](https://www.edureka.co/blog/django-tutorial/) *(2 days)*
+* [Tutorial](https://realpython.com/get-started-with-django-1/) *(2 days)*
     * Follow the tutorial and implement the blog app
 
 ### :point_right: Django rest framework
