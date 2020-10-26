@@ -167,3 +167,88 @@ D1, F1, D5, F5, C2, C4, G2, G4
 3. Design piece which can move diagonally on any grid limited by its allowed steps.
 4. Design special piece having multiple movements in different directions.
 5. Mix pieces that can move in multiple direction to form one of the above.
+
+
+### :point_right: Exercise 4 (Simple list and dictionary and file operations)
+You have to read and parse json files and perform below actions.
+All the necessary information for how to handle JSON files in python is given in [this article](https://www.programiz.com/python-programming/json).
+
+#### Sum and frequency
+Create a json file with the format given below and perform the following exercises.
+```json
+[1, 56, -80, 23, 52, 12, 43, 8, -80, 56, 52]
+```
+
+1. Print the total of all the numbers. So the output would be a single integer number
+2. Print the frequency of all different numbers. So the output would be a dictionary with all unique numbers given in the json file as keys and it's respective frequency as values.
+For example,
+```
+{
+    1: 1,
+    56: 2,
+    ...
+}
+```
+3. Try to create two JSON output file named `sum.json` and `freq.json` with the result of the respective exercise.
+
+#### Get useful information from the transaction log
+Create a json file with the format given below and perform the following exercises. (You can modify the data to simulate every possible cases)
+```json
+{
+	"users": [
+		{
+			"acc_id": "101",
+			"name": "bob",
+			"current_balance": 24000
+		},
+		{
+			"acc_id": "102",
+			"name": "alice",
+			"current_balance": 30000
+		},
+		{
+			"acc_id": "105",
+			"name": "arjun",
+			"current_balance": 35000
+		}
+	],
+	"bank_transactions": [
+		{
+			"acc_id": "101",
+			"date": "12/10/2020 03:00",
+			"amount": 2000,
+			"type": "debit"
+		},
+	    {
+			"acc_id": "102",
+			"date": "15/10/2020 03:00",
+			"amount": 200,
+			"type": "debit"
+		},
+		{
+			"acc_id": "101",
+			"date": "15/10/2020 13:00",
+			"amount": 5000,
+			"type": "credit"
+		},
+		{
+			"acc_id": "105",
+			"date": "20/10/2020 03:00",
+			"amount": 2000,
+			"type": "credit"
+		}	
+	]
+}
+```
+
+1. Accept account_id shell input from user and give total number of transactions performed on that account. So the output would be a single integer number.
+2. Print dictionary where account_ids as keys and current bank balance of that account after performing all bank transactions.
+For example,
+```
+{
+    "101": 27000,
+    "102": 29800,
+    "105": 37000
+}
+```
+
