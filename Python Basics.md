@@ -169,7 +169,7 @@ D1, F1, D5, F5, C2, C4, G2, G4
 5. Mix pieces that can move in multiple direction to form one of the above.
 
 
-### :point_right: Exercise 4 (Simple list and dictionary and file operations)
+### :point_right: Exercise 4 (Simple list/dictionary and file operations)
 You have to read and parse json files and perform below actions.
 All the necessary information for how to handle JSON files in python is given in [this article](https://www.programiz.com/python-programming/json).
 
@@ -219,7 +219,7 @@ Create a json file with the format given below and perform the following exercis
 			"amount": 2000,
 			"type": "debit"
 		},
-	    {
+		{
 			"acc_id": "102",
 			"date": "15/10/2020 03:00",
 			"amount": 200,
@@ -242,7 +242,7 @@ Create a json file with the format given below and perform the following exercis
 ```
 
 1. Accept account_id shell input from user and give total number of transactions performed on that account. So the output would be a single integer number.
-2. Print dictionary where account_ids as keys and current bank balance of that account after performing all bank transactions.
+2. Print dictionary where account_ids as keys and current bank balance of that account after performing all bank transactions as values.
 For example,
 ```
 {
