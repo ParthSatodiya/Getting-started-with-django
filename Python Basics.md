@@ -252,3 +252,40 @@ For example,
 }
 ```
 
+#### Handle amount transfer within a bank
+Create a json file with the format given below and perform the following exercises. (You can modify the data to simulate every possible cases)
+```json
+{
+	"users": [
+		{
+			"acc_id": "101",
+			"name": "bob",
+			"current_balance": 24000
+		},
+		{
+			"acc_id": "102",
+			"name": "alice",
+			"current_balance": 30000
+		},
+		{
+			"acc_id": "105",
+			"name": "arjun",
+			"current_balance": 35000
+		}
+	],
+	"bank_transfers": [
+		{
+			"from_account_id": "101",
+			"to_account_id": "102",
+			"amount": 200,
+			"date": "23/10/2020 03:00"
+		}
+		...
+	]
+}
+```
+
+1. Implement bank transfer functionality. So a bank user should be able to transfer amount to other person's bank account.
+	- Accept "from account id", "to account id", "amount to transfer" as the shell input.
+	- Print dictionary with account_ids as keys and respective current_balance as values.
+2. After each transfer, update input JSON file with `current_balance` of the related user accounts and log the transfer in the `bank_transfers` array given in the input file with the same format. So initially that array is empty. Now whenever you execute the code, it will update the `current_balance` of the related user accounts and also add new entry in the `bank_transfer` array. Now the next code execution will use this updated JSON file. `date` in each transfer log object is the date time when the transfer occurred.
