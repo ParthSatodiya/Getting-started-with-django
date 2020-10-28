@@ -289,3 +289,19 @@ Create a json file with the format given below and perform the following exercis
 	- Accept "from account id", "to account id", "amount to transfer" as the shell input.
 	- Print dictionary with account_ids as keys and respective current_balance as values.
 2. After each transfer, update input JSON file with `current_balance` of the related user accounts and log the transfer in the `bank_transfers` array given in the input file with the same format. So initially that array is empty. Now whenever you execute the code, it will update the `current_balance` of the related user accounts and also add new entry in the `bank_transfer` array. Now the next code execution will use this updated JSON file. `date` in each transfer log object is the date time when the transfer occurred.
+3. Use the data given in the input JSON file. Now each items given in the `bank_transfers` array is not yet applied on the user accounts. So you have to simulate each transfer on the users and update the `current_balance` accordingly. Here the `bank_transfers` array can not be sorted based on the datetime so make sure you perform each transfer in order.
+- For each users, you have to keep track of how many debits or credits occurred and how many invalid transfers happened for a particular user.
+whenever invalid transfer identified, you should avoid that for updating `current_balance` for the related users.
+- You should cover all the required cased in your input JSON file.
+- Expected output structure:
+	```json
+	{
+		"101": {
+			"credits": 12,
+			"debits": 13,
+			"invalid_transactions": ["23/10/2020 03:00"],
+			"current_balance": 2300
+		}
+		...
+	}
+	```
