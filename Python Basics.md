@@ -299,7 +299,7 @@ whenever invalid transfer identified, you should avoid that for updating `curren
 		"101": {
 			"credits": 12,
 			"debits": 13,
-			"invalid_transactions": ["23/10/2020 03:00"],
+			"invalid_transfer": ["23/10/2020 03:00"],
 			"current_balance": 2300
 		}
 		...
