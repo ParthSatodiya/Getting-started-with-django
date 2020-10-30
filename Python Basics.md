@@ -305,3 +305,8 @@ whenever invalid transfer identified, you should avoid that for updating `curren
 		...
 	}
 	```
+
+#### File listing and grouping
+Ask for the directory path as a shell input, validate that path; whether it's exists in the system, whether it's a directory path or not.
+1. List all files in that directory, group by extension and give the total size per group (use regex if possible to extract extensions from the file names). For now, ignore nested directories in the given path. The output would be a dictionary with file extension as keys and total size of that extension as values.
+For using regex in Python, refer [this article](https://www.programiz.com/python-programming/regex).
